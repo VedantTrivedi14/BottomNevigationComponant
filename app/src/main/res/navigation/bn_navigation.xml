@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bn_navigation.xml"
+    app:startDestination="@id/bn_first">
+
+    <fragment
+        android:id="@+id/bn_first"
+        android:name="com.tatvasoftassignment.bottomnevigationcomponant.Fragment.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_bn_first_to_bn_second"
+             />
+    </fragment>
+    <fragment
+        android:id="@+id/bn_second"
+        android:name="com.tatvasoftassignment.bottomnevigationcomponant.Fragment.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_bn_second_to_bn_third"
+            />
+        <action
+            android:id="@+id/action_bn_second_to_bn_first"
+             />
+    </fragment>
+    <fragment
+        android:id="@+id/bn_third"
+        android:name="com.tatvasoftassignment.bottomnevigationcomponant.Fragment.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_bn_third_to_bn_second"
+            />
+    </fragment>
+</navigation>
